@@ -42,6 +42,12 @@ Disclaimer
 TODO
 ----
 
-The original code had no copyright definition, which in my (and most other) jurisdictions makes it
-'All Rights Reserved'. I intend to rewrite the entire codebase and make it python3 only, which should
-be enough to justify a license on it which I can define.
+* The original code had no copyright definition, which in my (and most
+  other) jurisdictions makes it
+  'All Rights Reserved'. I intend to rewrite the entire codebase and
+  make it python3 only, which should
+  be enough to justify a license on it which I can define.
+
+* Rewrite Status:
+  setup.py: original code
+  manga-scrapper: TODO
