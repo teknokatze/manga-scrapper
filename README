@@ -15,7 +15,8 @@ Requirements
 cfscrape requires Node ("Nodejs") at runtime, as well as the python
 module 'Requests'
 
-## Usage
+Usage
+-----
 
 For **Mangakalot/Manganelo**
 
@@ -29,10 +30,18 @@ For **TuMangaOnline**
     
 The script creates a directory "downloads" to save the downloaded images
     
-## Disclaimer
+Disclaimer
+----------
 
 - The scripts may become obsolete at any time
 - Use with responsibility and support original manga (and pages that bring to you manga without licence on your country)
 - All comic/manga is copyrighted to their respective author. Please buy the comic/manga if it's available in your country.
 - This python module is written to explore the concepts of scrappers, copyright circumvention and illegal activities is
   not the main purpose of the author.
+
+TODO
+----
+
+The original code had no copyright definition, which in my (and most other) jurisdictions makes it
+'All Rights Reserved'. I intend to rewrite the entire codebase and make it python3 only, which should
+be enough to justify a license on it which I can define.
