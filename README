@@ -1,15 +1,19 @@
-# mangaScrapper
+manga-scrapper
+==============
 
 Small Python scripts to download chapters from manganelo/mangakakalot and tuMangaOnline
 
-## Requirement
-    
-    Python 2.7.X
-    --------------
-    BeautifulSoup
-    cfscrape
-    
-**You cant install both libs with pip**
+Originally based on https://github.com/riojano0/manga-scrapper
+
+Requirements
+------------
+
+* Python 2.7.X
+  * BeautifulSoup >= 4.x
+  * cfscrape
+
+cfscrape requires Node ("Nodejs") at runtime, as well as the python
+module 'Requests'
 
 ## Usage
 
@@ -23,10 +27,12 @@ For **TuMangaOnline**
     python tu-manga-online-scrapper.py
 ```input type example: https://www.tumangaonline.com/lector/Akatsuki-no-Yona/8720/1.00/108``` 
     
-The script creates a directory "downloads" and there will download the images
+The script creates a directory "downloads" to save the downloaded images
     
 ## Disclaimer
 
 - The scripts may become obsolete at any time
 - Use with responsibility and support original manga (and pages that bring to you manga without licence on your country)
 - All comic/manga is copyrighted to their respective author. Please buy the comic/manga if it's available in your country.
+- This python module is written to explore the concepts of scrappers, copyright circumvention and illegal activities is
+  not the main purpose of the author.
