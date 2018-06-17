@@ -1,19 +1,25 @@
 import os
 import cfscrape
-from BeautifulSoup import *
+import BeautifulSoup
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(__file__))
 
 
+def usage():
+    """
+    Print help about this script.
+    """
+    print("Enter full URL to scrape. Input an empty line to exit")
+    print("-h or --help to view this help.")
+
+
 def main():
-    print ("######################################################")
-    print ("Welcome, introduce the url, take care of all the parts (include the http or https)")
-    print ("url example: http://manganelo.com/chapter/yakusoku_no_neverland/chapter_2")
-    print ("Leave blank for exit")
-    print ("######################################################")
+    print("Enter full URL to scrape. Input an empty line to exit")
 
     while True:
         url = raw_input('-------------------\nEnter chapter url: ')
+        if url == "q":
+            
         if len(url) < 1: break
         http, empty, page, string, serie, chapter = url.split("/")
 
@@ -43,5 +49,11 @@ def main():
             counter += 1
 
 
-if __name__ == "__main__":
+if __main__ == __name__:
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], "h", "["help"])
+    except getopt.GetoptError as e:
+        print(e)
+        print("Exception occured")
+        usage()
     main()

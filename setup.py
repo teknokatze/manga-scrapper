@@ -11,6 +11,11 @@ setup(
     keywords = "manga scraping",
     classifiers = ['Development Status :: 3 - Alpha'],
     platforms = ['Linux'],
+    entry_points = {
+        "console_scripts": [
+            "manga_scrapper = manga_scrapper.__main__:main",
+            ]
+        },
     include_package_data = True,
     install_requires = ['cfscrape', 'BeautifulSoup']
 )
